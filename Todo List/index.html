@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container rounded-3 border border-2 rounded border-dark my-5 bg-white" style="height:auto;">
+    <div>
+        <h1 class="h1 text-center">My To Do List</h1>
+        <div class="row">
+            <div class="col-8">
+                <input class="py-3 form-control shadow" placeholder="Yapılacaklar" type="text" id="inputText">
+            </div>
+            <div class="col-2">
+                <button onclick="addList()"class=" btn btn-primary">Ekle</button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row rounded bg-white">
+        <div class="col-12">
+            <ul class="list-group mb-3" id="list"></ul>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
